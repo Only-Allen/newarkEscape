@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">newarkEscape</string>
+
+    <string name="escape_opening">正在打开逃逸口</string>
+    <string name="escape_closing">正在关闭逃逸口</string>
+    <string name="escape_init">逃逸口正在初始化位置</string>
+    <string name="sunfoor_opening">正在打开天窗</string>
+    <string name="sunfoor_closing">正在关闭天窗</string>
+    <string name="ladder_opening">伸缩天梯正在开启</string>
+    <string name="ladder_closing">伸缩天梯正在关闭</string>
+
+
+    <string name="co2_density_high_1">CO2浓度高1级</string>
+    <string name="co2_density_high_2">CO2浓度高2级</string>
+    <string name="co2_density_high_3">CO2浓度高3级</string>
+    <string name="co2_sensor_error">CO2传感器故障</string>
+
+    <string name="escape_reset">逃逸口驱动器报警复位</string>
+    <string name="ladder">升降梯</string>
+    <string name="language">中文</string>
+    <string name="up">升</string>
+    <string name="down">降</string>
+    <string name="escape">逃逸口</string>
+    <string name="scuttle">天窗</string>
+    <string name="way_out">逃生</string>
+    <string name="close">关闭</string>
+    <string name="ppm">ppm</string>
+
+    <string name="connecting_net">正在连接网络...</string>
+    <string name="connecting_net1">正在连接网络......</string>
+    <string name="connecting_net2">正在连接网络</string>
+</resources>

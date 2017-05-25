@@ -1,0 +1,45 @@
+<configuration>
+    <property name="EXT_FILES_DIR" value="/sdcard/Android/data/${PACKAGE_NAME}/files"/>
+    <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+        <tagEncoder>
+            <pattern>%logger{12}</pattern>
+        </tagEncoder>
+        <encoder>
+            <pattern>[%thread] %M\(%L\):%msg</pattern>
+        </encoder>
+        <!--<layout class="ch.qos.logback.classic.PatternLayout">-->
+            <!--<pattern>%date %-5level %logger{35} %M\(%L\) - %message%n</pattern>-->
+        <!--</layout>-->
+    </appender>
+    <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+        <smtpHost>smtp.163.com</smtpHost>
+        <to>398406449@qq.com</to>
+        <from>18011340192@163.com</from>
+        <username>18011340192@163.com</username>
+        <password>chenlei1</password>
+        <SSL>true</SSL>
+        <smtpPort>465</smtpPort>
+        <subject>TESTING: %logger{20} - %m</subject>
+        <asynchronousSending>true</asynchronousSending>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%date %-5level %logger{35} %M\(%L\) - %message%n</pattern>
+        </layout>
+    </appender>
+    <appender name="rollingAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${EXT_FILES_DIR}/newark.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${EXT_FILES_DIR}/newark-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder><!-- 必须指定，否则不会往文件输出内容 -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} %M\(%L\) - %msg%n</pattern>
+        </encoder>
+        <append>false</append>
+        <prudent>false</prudent>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="logcat" />
+        <appender-ref ref="rollingAppender" />
+    </root>
+</configuration>

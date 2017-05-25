@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">newarkEscape</string>
+
+    <string name="escape_opening">escape is opening</string>
+    <string name="escape_closing">escape is closing</string>
+    <string name="escape_init">escape is init</string>
+    <string name="sunfoor_opening">sunfoor is opening</string>
+    <string name="sunfoor_closing">sunfoor is closing</string>
+    <string name="ladder_opening">ladder is opening</string>
+    <string name="ladder_closing">ladder is closing</string>
+
+
+    <string name="co2_density_high_1">CO2 density high 1</string>
+    <string name="co2_density_high_2">CO2 density high 2</string>
+    <string name="co2_density_high_3">CO2 density high 3</string>
+    <string name="co2_sensor_error">CO2 sensor fault</string>
+
+    <string name="escape_reset">escape reset</string>
+    <string name="ladder">ladder</string>
+    <string name="language">english</string>
+    <string name="up">up</string>
+    <string name="down">down</string>
+    <string name="escape">EMERGENCY EXIT</string>
+    <string name="scuttle">SUNFOOR</string>
+    <string name="way_out">WAY OUT</string>
+    <string name="close">close</string>
+    <string name="ppm">ppm</string>
+
+    <string name="connecting_net">connecting net...</string>
+    <string name="connecting_net1">connecting net......</string>
+    <string name="connecting_net2">connecting net</string>
+</resources>
