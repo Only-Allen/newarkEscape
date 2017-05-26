@@ -274,7 +274,7 @@ public class Communicator {
      */
     public void upLadder() {
         sendControlRequest(
-                getControlRunnable(Constant.CONTROL_22, new short[] {Constant.VALUE_0_BIT}),
+                getControlRunnable(Constant.CONTROL_22, new short[] {Constant.VALUE_8_BIT}),
                 getControlRunnable(Constant.CONTROL_22, new short[] {0}));
     }
 
@@ -283,7 +283,7 @@ public class Communicator {
      */
     public void downLadder() {
         sendControlRequest(
-                getControlRunnable(Constant.CONTROL_22, new short[] {Constant.VALUE_8_BIT}),
+                getControlRunnable(Constant.CONTROL_22, new short[] {Constant.VALUE_0_BIT}),
                 getControlRunnable(Constant.CONTROL_22, new short[] {0}));
     }
 

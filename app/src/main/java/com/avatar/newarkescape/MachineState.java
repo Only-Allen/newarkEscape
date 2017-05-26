@@ -47,7 +47,7 @@ public class MachineState implements Serializable {
                     mEscapeState = State.MIDDLE;
                 }
                 if ((value & Constant.VALUE_11_BIT) != 0) {
-                    mEscapeState = State.CLOSED;
+                    mEscapeState = State.OPENED;
                 }
                 if ((value & Constant.VALUE_12_BIT) != 0) {
                     mScuttleState = State.CLOSING;
